@@ -5,8 +5,16 @@ const fromEuroToDollar = function(valueInEuro){
     //return the dollar value
     return valueInDollar;
     }
-const sum = (a,b) => {
-    return a+b 
+var fromDollarToYen = function(valueInDollar){
+    let valueInYen = valueInDollar * 127.9
+    return valueInYen;
 }
-console.log(sum(7,3))
-module.exports = {sum, fromEuroToDollar};
+var fromYenToPound = function(valueInYen){
+    let valueInPound = valueInYen * 0.8
+        return valueInPound;
+}
+// const sum = (a,b) => {
+//     return a+b 
+// }
+// console.log(sum(7,3))
+module.exports = {fromEuroToDollar, fromDollarToYen, fromYenToPound};
